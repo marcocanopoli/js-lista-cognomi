@@ -18,8 +18,17 @@ lastNamesList.push(lastName);
 lastNamesList.sort();
 
 //print in console log
+// for (var i = 0;  i < lastNamesList.length; i++) {
+//     console.log('Cognome #', i + 1 , lastNamesList[i]);
+//     document.getElementById('last_names').innerHTML += '<li>Cognome #' +  (i + 1) + ' ' + lastNamesList[i] + '</li>';
+// }
+
+
+//prints input string position only
 for (var i = 0;  i < lastNamesList.length; i++) {
-    console.log('Cognome #', i + 1 , lastNamesList[i]);
-    document.getElementById('last_names').innerHTML += '<li>Cognome #' +  (i + 1) + ' ' + lastNamesList[i] + '</li>';
+    if (lastNamesList[i] == lastName) {
+        console.log('Cognome #', i + 1 , lastNamesList[i]);
+        document.getElementById('last_names').innerHTML += '<li>Cognome #' +  (i + 1) + ' ' + lastNamesList[i] + '</li>';
+    }
 }
 
